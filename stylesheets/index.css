@@ -1,0 +1,10 @@
+body {
+  background-color: #9B0057;
+}
+
+img {
+  width: 400px;
+  position: relative;
+  left: 35%;
+  top: 150px;
+}
