@@ -1,4 +1,4 @@
-/* START CSS RESET */
+/*START CSS RESET*/
 
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -14,6 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
 }
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -46,26 +47,17 @@ table {
   border-spacing: 0;
 }
 
-/* end css reset */
+
+/*end css reset*/
 
 
-/* START STRUCTURAL STYLES */
+/*START STRUCTURAL STYLES*/
 
 .page {
   max-width: 800px;
   width: 65%;
   margin: auto;
   background: #fff;
-}
-
-/* the above styles will all apply if the viewport is larger than 601px */
-
-/* if the viewport is smaller than 800px, these styles will apply */
-
-@media (max-width: 800px) {
-  .page {
-    width: 90%;
-  }
 }
 
 .col {
@@ -78,30 +70,16 @@ table {
   padding-right: 0;
 }
 
-/* if the viewport is smaller than 480px, these styles will apply */
-
-@media (max-width: 480px) {
-  .col {
-    width: 100%;
-    display: block;
-  }
-
-  h1 {
-    font-size: 1.3em;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
 article {
   padding: 20px;
   font-size: .8em;
 }
 
-/* end structural styles */
+
+/*end structural styles*/
 
 
-/* START HEADER STYLES */
+/*START ARTICLE STYLES*/
 
 h1 {
   background-color: #0d5631;
@@ -121,10 +99,11 @@ img {
   max-width: 100%;
 }
 
-/* end header styles */
+
+/*end article styles*/
 
 
-/* START FOOTER STYLES */
+/*START FOOTER STYLES*/
 
 footer {
   background-color: #0d5631;
@@ -144,4 +123,35 @@ a:hover, a:active {
   text-decoration: none;
 }
 
-/* end footer styles */
+
+/*end footer styles*/
+
+
+/* the above styles will all apply if the viewport is larger than 601px
+if the viewport is smaller than 600px, these styles will apply */
+
+@media (max-width: 800px) {
+  .page {
+    width: 90%;
+  }
+}
+
+
+/*if the viewport is smaller than 480px, these styles will apply*/
+
+@media (max-width: 480px) {
+  .col {
+    width: 100%;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.3em;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+}
