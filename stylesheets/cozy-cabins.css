@@ -134,6 +134,16 @@ header {
     white-space: nowrap; /* keeps nav text from breaking into two lines */
     text-align: center;
   }
+
+	a:link, a:active {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:visited, a:hover{
+		text-decoration: none;
+		color: #bbb;
+	}
 }
 
 /* end nav styles */
