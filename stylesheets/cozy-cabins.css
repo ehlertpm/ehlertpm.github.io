@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: .9em;
+  font-family: 'Montserrat', 'sans-serif';
+  color: white;
+  background-color: #eee;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+/* START STRUCTURAL STYLES */
+
+/* mobile page */
+.page {
+  width: 100%;
+  min-width: 375px;
+  height: 665px;
+  margin: auto;
+  background-image: url("../images/cc-mobile-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  .page {
+    max-width: 1024px;
+    height: 768px;
+    background-image: url("../images/cc-bg.jpg");
+  }
+}
+
+/* mobile page */
+header {
+  width: 100%;
+  height: 22%;
+  padding: 10% 0;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  header {
+    width: 25%;
+    height: 33%;
+    margin: 0;
+    padding: 2% 0 0 0;
+  }
+}
+
+/* end structural styles */
+
+/* START NAV STYLES */
+
+/* mobile page */
+.nav-mobile {
+  width: 11%;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  nav {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33%;
+    padding: 2% 0 0 0;
+  }
+
+  .nav-desktop {
+    display: table;
+    margin-top: 10%;
+  }
+
+  .nav-desktop li {
+    display: table-cell;
+    width: 10%;
+    padding: 3%;
+    white-space: nowrap; /* keeps text from breaking to two lines */
+    text-align: center;
+  }
+}
+
+/* end nav styles */
+
+/* START HEADER STYLES */
+
+/* mobile page */
+.logo {
+  width: 34%;
+  display: block; /* this must be declared so that margin: auto will work */
+  margin: auto;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  .logo {
+    width: 80%;
+  }
+}
+
+/* end header styles */
+
+/* START MAIN CONTENT STYLES */
+
+/* mobile page */
+main {
+  width: 90%;
+  height: 58%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  main {
+    width: 70%;
+    height: 52%;
+    padding-left: 30%;
+  }
+}
+
+/* mobile page */
+article {
+  width: 81%;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  article {
+    width: 70%;
+    font-size: 1.125em;
+  }
+}
+
+/* mobile page */
+h1 {
+  font-family: 'Corben', 'cursive';
+  font-weight: 700;
+  font-size: 2.375em;
+  margin-bottom: 10%;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/* mobile page */
+p {
+  font-size: .65em;
+  margin-top: 15%;
+}
+
+p:last-child {
+  margin-top: auto;
+}
+
+/* desktop page */
+@media (min-width: 724px) {
+  p {
+    margin-top: 5%;
+  }
+}
+
+/* end main content styles */
