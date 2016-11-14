@@ -54,18 +54,18 @@ table {
 
 /* START STRUCTURAL STYLES */
 
-/* mobile page */
+/* mobile */
 .page {
   width: 100%;
   min-width: 375px;
   height: 665px;
   margin: auto;
   background-image: url("../images/cc-mobile-bg.jpg");
-  background-size: cover;
-  position: relative;
+  background-size: cover; /* cannot be written in shorthand, because background-size is not an included property */
+  position: relative; /* declared to position the nav later - could also be achieved using display: table */
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   .page {
     max-width: 1024px;
@@ -74,20 +74,20 @@ table {
   }
 }
 
-/* mobile page */
+/* mobile */
 header {
   width: 100%;
   height: 22%;
-  padding: 10% 0;
+  padding: 10% 0; /* header has a computed height of 32% */
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   header {
     width: 25%;
     height: 33%;
     margin: 0;
-    padding: 2% 0 0 0;
+    padding: 2% 0 0 0; /* header has a computed height of 35% */
   }
 }
 
@@ -95,22 +95,22 @@ header {
 
 /* START NAV STYLES */
 
-/* mobile page */
+/* mobile */
 .nav-mobile {
   width: 11%;
   position: absolute;
   left: 10%;
-  top: 5%;
+  top: 5%; /* percentages are used for positioning to enable smooth scaling */
 }
 
 .nav-desktop {
-  display: none;
+  display: none; /* hides desktop nav */
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   .nav-mobile {
-    display: none;
+    display: none; /* hides mobile nav */
   }
 
   nav {
@@ -119,11 +119,11 @@ header {
     top: 0;
     right: 0;
     height: 33%;
-    padding: 2% 0 0 0;
+    padding: 2% 0 0 0; /* nav has a computed height of 35% - same as header */
   }
 
   .nav-desktop {
-    display: table;
+    display: table; /* declared to display nav buttons next to each other */
     margin-top: 10%;
   }
 
@@ -131,7 +131,7 @@ header {
     display: table-cell;
     width: 10%;
     padding: 3%;
-    white-space: nowrap; /* keeps text from breaking to two lines */
+    white-space: nowrap; /* keeps nav text from breaking into two lines */
     text-align: center;
   }
 }
@@ -140,14 +140,14 @@ header {
 
 /* START HEADER STYLES */
 
-/* mobile page */
+/* mobile */
 .logo {
   width: 34%;
   display: block; /* this must be declared so that margin: auto will work */
   margin: auto;
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   .logo {
     width: 80%;
@@ -158,7 +158,7 @@ header {
 
 /* START MAIN CONTENT STYLES */
 
-/* mobile page */
+/* mobile */
 main {
   width: 90%;
   height: 58%;
@@ -166,7 +166,7 @@ main {
   padding-left: 10%;
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   main {
     width: 70%;
@@ -175,12 +175,12 @@ main {
   }
 }
 
-/* mobile page */
+/* mobile */
 article {
-  width: 81%;
+  width: 80%;
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   article {
     width: 70%;
@@ -188,7 +188,7 @@ article {
   }
 }
 
-/* mobile page */
+/* mobile */
 h1 {
   font-family: 'Corben', 'cursive';
   font-weight: 700;
@@ -196,14 +196,14 @@ h1 {
   margin-bottom: 10%;
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   h1 {
     font-size: 4em;
   }
 }
 
-/* mobile page */
+/* mobile */
 p {
   font-size: .65em;
   margin-top: 15%;
@@ -213,7 +213,7 @@ p:last-child {
   margin-top: auto;
 }
 
-/* desktop page */
+/* desktop */
 @media (min-width: 724px) {
   p {
     margin-top: 5%;
