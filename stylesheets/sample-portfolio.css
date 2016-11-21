@@ -1,0 +1,261 @@
+/* ~~~START CSS RESET~~~ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: sans-serif;
+  background-color: #bbb;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ~~~ end css reset ~~~ */
+
+/* note that all default styles are for desktop site */
+
+/* ~~~ START STRUCTURAL STYLES ~~~ */
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+  background-color: #bbb;
+}
+
+/* ~~~ end structural styles ~~~ */
+
+/* ~~~ START HEADER STYLES ~~~ */
+
+header {
+  width: 75%;
+  height: 192px;
+  display: table;
+  margin: auto;
+}
+
+.logo-wrapper {
+  width: 18.75%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.headline-wrapper {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-left: 5%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .logo-wrapper {
+    width: 100%;
+    margin: 5% 0 5% 0;
+    display: block;
+    text-align: center;
+  }
+
+  .headline-wrapper {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/* ~~~ end header styles ~~~ */
+
+/* ~~~ START NAV STYLES ~~~ */
+
+.main-nav {
+  width: 75%;
+  margin: auto;
+}
+
+.main-nav ul {
+  width: 100%;
+  display: table;
+}
+
+.main-nav li {
+  width: 25%;
+  height: 48px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: lightgray;
+}
+
+/* mobile */
+@media (max-width: 375px) {
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav ul li {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* ~~~ end nav styles ~~~ */
+
+/* ~~~ START MAIN CONTENT STYLES ~~~ */
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+.portfolio-nav ul {
+  display: table;
+  width: 100%;
+}
+
+.portfolio-nav li {
+  display: table-cell;
+  text-align: center;
+}
+
+.portfolio-nav li:nth-child(1),
+.portfolio-nav li:nth-child(4) {
+  text-align: left;
+}
+
+.portfolio-nav li:nth-child(3),
+.portfolio-nav li:nth-child(6) {
+  text-align: right;
+}
+
+.portfolio-nav li img {
+  width: 80%;
+}
+
+.portfolio-nav .row1 {
+  display: table-row;
+}
+
+.portfolio-nav .row1 li {
+  padding-bottom: 5%;
+}
+
+.portfolio-nav .row2 {
+  display: table-row;
+}
+
+/* mobile */
+@media (max-width: 375px) {
+
+  .portfolio-nav li {
+    display: block;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  .portfolio-nav li:nth-child(1),
+  .portfolio-nav li:nth-child(3),
+  .portfolio-nav li:nth-child(4),
+  .portfolio-nav li:nth-child(6) {
+    text-align: center;
+  }
+}
+
+figure {
+  display: table;
+  margin-top: 5%;
+}
+
+.portfolio-img {
+  width: 90%;
+  display: table-cell;
+}
+
+figcaption {
+  width: 35%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+figcaption p {
+  margin-top: 5%;
+  font-size: .8em;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  figure {
+    display: block;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    margin: 5% auto 5% auto;
+  }
+}
+
+/* ~~~ end main content styles ~~~ */
+
+/* ~~~ START FOOTER STYLES ~~~ */
+
+footer {
+  width: 75%;
+  margin: auto;
+  height: 144px;
+  text-align: center;
+  line-height: 144px;
+}
+
+/* ~~~ end footer styles ~~~ */
