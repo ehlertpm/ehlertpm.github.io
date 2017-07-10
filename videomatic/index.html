@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Vide-o-Magic 3000</title>
+  <meta name="description" content="Vide-o-Magic 3000">
+  <meta name="author" content="Patrice and Tim">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+
+        <!-- Header
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header>
+          <img src="images/enroll-logo-medidata-attr-blue.svg" alt="Enroll logo" />
+          <h1>Vide-o-Magic 3000</h1>
+
+          <div class="question">
+            <h4>Instructions</h4>
+            <p>Fill out this form to the best of your knowledge. If you're not sure about a response, leave the field blank and contact your client services representative. We'll use your responses to create a <a href="https://www.youtube.com/watch?v=42-_lda9RLE&t=1s" target="_blank">custom educational video</a> for
+              your study.</p>
+          </div>
+        </header>
+
+        <!-- Main Form
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <main>
+
+          <form>
+
+            <!-- Uploads
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+            <div class="question">
+              <section class="uploads">
+                <h2>Uploads</h2>
+                <p>Upload a high resolution study logo image.</p>
+                <p>Acceptable file types are JPG, GIF, PNG, SVG and EPS. <a href="#" class="add"><i class="material-icons">help</i></a></p>
+                <div class="image-upload" />
+                <p class="drag">Drag an image here or <a href="#">browse</a> for an image to upload.</p>
+            </div>
+            <p>Upload a photo of the study drug(s).</p>
+            <div class="image-upload" />
+            <p class="drag">Drag an image here or <a href="#">browse</a> for an image to upload.</p>
+      </div>
+      </section>
+    </div>
+
+
+    <!-- SupaStars
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="question">
+      <h2>Character Selection</h2>
+      <section class="supastars">
+        <p>Select representative doctor and patient characters for your video.</p>
+        <p>Doctor gender:</p>
+        <input type="radio" name="doctor-gender" value="male">Male
+        <input type="radio" name="doctor-gender" value="female">Female
+        <div class="ss-selection-wrapper">
+          <p>Choose a doctor character.</p>
+          <div class="ss-selection">
+            <input type="radio" name="doctor" value="dr-light">
+            <img src="images/dr-light.png" alt="Light-skinned doctor" />
+          </div>
+          <div class="ss-selection">
+            <input type="radio" name="doctor" value="dr-med">
+            <img src="images/dr-med.png" alt="Medium-skinned doctor" />
+          </div>
+          <div class="ss-selection">
+            <input type="radio" name="doctor" value="dr-dk">
+            <img src="images/dr-dk.png" alt="Dark-skinned doctor" />
+          </div>
+        </div>
+
+        <p>Patient gender:</p>
+        <input type="radio" name="patient-gender" value="male">Male
+        <input type="radio" name="patient-gender" value="female">Female
+        <p>Choose a patient character.</p>
+        <div class="ss-selection-wrapper">
+          <div class="ss-selection">
+            <input type="radio" name="patient" value="patient-light">
+            <img class="female" src="images/patient-light.png" alt="Light-skinned patient" />
+          </div>
+          <div class="ss-selection">
+            <input type="radio" name="patient" value="patient-med">
+            <img class="female" src="images/patient-med.png" alt="Medium-skinned patient" />
+          </div>
+          <div class="ss-selection">
+            <input type="radio" name="patient" value="patient-dk">
+            <img class="female" src="images/patient-dk.png" alt="Dark-skinned patient" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Script
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section class="script">
+
+      <!-- Overview
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="question">
+        <h2>Video Script</h2>
+        <h3>Overview</h3>
+        <h4>Introduction</h4>
+        <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in, and
+          help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
+
+        <h4>Knowledge Review</h4>
+        <p>
+          Will participants be required to take a knowledge review as a part of the informed consent process?</p>
+        <p><input type="radio" name="kr" value="yes">Yes
+          <input type="radio" name="kr" value="no">No</p>
+
+
+        <h4>Sponsor</h4>
+        <p class="script">
+          This research study is sponsored by
+          <input type="text" name="study-sponsor" placeholder="name of study sponsor">.</p>
+
+
+        <h4>Diagnosis</h4>
+        <p class="script">You’re being invited to take part in this study because
+          <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis."></textarea></p>
+
+        <h4>Purpose</h4>
+        <p class="script">The purpose of this study is to
+          <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis."></textarea></p>
+
+        <h4>Drug Description</h4>
+        <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p>
+
+
+        <h4>Participants</h4>
+        <p class="script">About <input type="number" name="participants" placeholder="330"> participants will take part in this study in
+          <select name="countries">
+                  <option value="united-states">the United States</option>
+                  <option value="india">India</option>
+                  <option value="china">China</option>
+                  <option value="uk">United Kingdom</option>
+                </select> .
+          <a class="add" href="#"><i class="material-icons">add_circle</i></a>
+
+          <h4>Randomization</h4>
+          <p class="script">This study is a randomized trial, meaning that you will be assigned by chance to one of <input type="number" name="treatment-groups" placeholder="2"> treatment groups. In other words, you will have a 50% chance of being assigned to any/either
+            of the treatment groups. Everyone will receive <input type="text" name="drug-name" placeholder="dectixeze"><a class="add" href="#"><i class="material-icons">add_circle</i></a> or a placebo. A placebo looks exactly like the study drug but has
+            no active medicine in it. Neither you nor the study doctor will know which treatment group you are in. </p>
+
+            <h4>Voluntary Participation</h4>
+            <p class="script">You may decide to stop your participation at any time. If you decide to stop your participation, your relationship with your doctor and any treatment that you receive outside of the study will not be affected.</p>
+
+          <!-- Informed Consent
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+          <section class="informed-consent">
+            <h3>Informed Consent</h3>
+            <h4>Informed Consent Form</h4>
+            <p class="script">In order to enter this study, you have to sign a document called the “informed consent form”. By signing this document, you are saying that you understand the risks and benefits of this study and that you’d like to volunteer to take part in
+              this study. This iPad will allow you to read the entire informed consent form and to sign it. A copy of the form, with your signature and the signature of the study doctor or a study staff member, will be given to you at the end of this
+              process. At any time, you may ask the study doctor or one of the study staff members any questions you might have.</p>
+
+            <h4>Sub-Study</h4>
+            <p>Will participants be asked to enroll in a sub-study?</p>
+            <p><input type="radio" name="sub-study" value="yes">Yes
+            <input type="radio" name="sub-study" value="no">No</p>
+
+            <h4>Length of Participation</h4>
+            <p class="script">If you decide you want to be in this study, your participation will last
+            <textarea name="participation-length" placeholder="between twelve and eighteen weeks"></textarea></p>
+
+            <h4>Timeline(s)</h4>
+            <textarea name="timeline" placeholder="You will visit the study clinic every one to two weeks for the length of your participation. You will return to the clinic for a follow-up visit two weeks after the study is over."></textarea>
+
+
+            <!-- Submit Form
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+            <section class="submit">
+              <a class="button" href="script.html">Preview your Script</a>
+            </section>
+          </section </form>
+
+          </main>
+
+      </div>
+
+      <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="js/script-o-matic.js"></script>
+</body>
+
+</html>
