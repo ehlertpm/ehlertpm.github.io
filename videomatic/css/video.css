@@ -209,13 +209,22 @@ header h3, p {
 }
 
 .image-upload {
-  width: 46%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
   margin: 0 auto 4% auto;
   background-color: #eee;
   border: 1px solid #002855;
   text-align: center;
   padding: 4%;
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+.image-upload {
+  width: 50%;
+  height: 300px;
+}
 }
 
 .study-logo, .study-drug {
