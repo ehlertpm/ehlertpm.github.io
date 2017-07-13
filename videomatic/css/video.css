@@ -43,12 +43,18 @@
   width: 100%;
 }
 
+.ss-selection {
+  display: block;
+  width: 80%;
+  margin: 3% auto 3% auto;
+  text-align: center;
+}
+
 
 /* For devices larger than 400px */
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
     padding: 0;
   }
 }
@@ -60,16 +66,15 @@
   .container {
     width: 80%;
   }
-  .column, .columns {
-    margin-left: 4%;
+
+  .ss-selection {
+    display: inline-block;
+    width: 25%;
+    margin: 3%;
+    text-align: center;
   }
-  .column:first-child, .columns:first-child {
-    margin-left: 0;
-  }
-  .one.column, .one.columns {
-    width: 4.66666666667%;
-  }
-  .two.columns {
+
+  /*.two.columns {
     width: 13.3333333333%;
   }
   .three.columns {
@@ -113,13 +118,13 @@
     width: 48%;
   }
   /* Offsets */
-  .offset-by-one.column, .offset-by-one.columns {
+  .column, .offset-by-one.columns {
     margin-left: 8.66666666667%;
   }
-  .offset-by-two.column, .offset-by-two.columns {
+.column, .offset-by-two.columns {
     margin-left: 17.3333333333%;
   }
-  .offset-by-three.column, .offset-by-three.columns {
+  .column, .offset-by-three.columns {
     margin-left: 26%;
   }
   .offset-by-four.column, .offset-by-four.columns {
@@ -179,6 +184,11 @@ body {
   color: #002855;
 }
 
+main {
+  padding: 0 5% 5% 5%;
+  background-color: #eaedf0;
+}
+
 header {
   padding: 5%;
   background-color: #eaedf0;
@@ -235,13 +245,6 @@ img {
   text-align: center;
 }
 
-.ss-selection {
-  display: inline-block;
-  width: 25%;
-  margin: 3%;
-  text-align: center;
-}
-
 .ss-selection-wrapper-script {
   text-align: center;
   display: table-cell;
@@ -250,11 +253,6 @@ img {
 
 input[name='doctor'] {
   display: block;
-}
-
-main {
-  padding: 0 5% 5% 5%;
-  background-color: #eaedf0;
 }
 
 .question {
@@ -343,6 +341,10 @@ p {
   margin-top: 0;
 }
 
+.script {
+  width: 100%;
+}
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -388,7 +390,7 @@ i {
   color: #002855;
   border: 1px solid #002855;
   background-color: transparent;
-  width: 30%;
+  width: 100%;
 }
 
 .button-red {
@@ -420,6 +422,12 @@ i {
   background-color: #1eaedb;
 }
 
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  .button {
+    width: 50%;
+  }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -441,7 +449,6 @@ input[type='email'], input[type='number'], input[type='search'], input[type='tex
   width: 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 }
 
 input[type='email']:focus, input[type='number']:focus, input[type='search']:focus, input[type='text']:focus, input[type='tel']:focus, input[type='url']:focus, input[type='password']:focus, textarea:focus, select:focus {
@@ -450,7 +457,7 @@ input[type='email']:focus, input[type='number']:focus, input[type='search']:focu
 }
 
 textarea {
-  width: 90%;
+  width: 100%;
   padding: 1%;
   border: 1px solid #ddd;
   background-color: #fff;
