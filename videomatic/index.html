@@ -84,40 +84,73 @@
                 <h2>Character Selection</h2>
                 <p>Select representative doctor and patient characters for your video.</p>
                 <p>Doctor gender:</p>
-                <input type="radio" name="doctor-gender" value="male">Male
-                <input type="radio" name="doctor-gender" value="female">Female
-                <div class="ss-selection-wrapper">
+                <input class="male-doctor" type="radio" name="doctor-gender" value="male">Male
+                <input class="female-doctor" type="radio" name="doctor-gender" value="female">Female
+
+                <div class="ss-selection-wrapper male-doctors" style="display: none">
                   <p>Choose a doctor character.</p>
                   <div class="ss-selection">
                     <input type="radio" name="doctor" value="dr-light">
-                    <img src="images/dr-light.png" alt="Light-skinned doctor" />
+                    <img src="images/male-doctor-light.png" alt="Light-skinned doctor" />
                   </div>
                   <div class="ss-selection">
                     <input type="radio" name="doctor" value="dr-med">
-                    <img src="images/dr-med.png" alt="Medium-skinned doctor" />
+                    <img src="images/male-doctor-med.png" alt="Medium-skinned doctor" />
                   </div>
                   <div class="ss-selection">
                     <input type="radio" name="doctor" value="dr-dk">
-                    <img src="images/dr-dk.png" alt="Dark-skinned doctor" />
+                    <img src="images/male-doctor-dark.png" alt="Dark-skinned doctor" />
+                  </div>
+                </div>
+
+                <div class="ss-selection-wrapper female-doctors" style="display: none">
+                  <p>Choose a doctor character.</p>
+                  <div class="ss-selection">
+                    <input type="radio" name="doctor" value="dr-light">
+                    <img class="female" src="images/female-doctor-light.png" alt="Light-skinned doctor" />
+                  </div>
+                  <div class="ss-selection">
+                    <input type="radio" name="doctor" value="dr-med">
+                    <img class="female" src="images/female-doctor-med.png" alt="Medium-skinned doctor" />
+                  </div>
+                  <div class="ss-selection">
+                    <input type="radio" name="doctor" value="dr-dk">
+                    <img class="female" src="images/female-doctor-dark.png" alt="Dark-skinned doctor" />
                   </div>
                 </div>
 
                 <p>Patient gender:</p>
-                <input type="radio" name="patient-gender" value="male">Male
-                <input type="radio" name="patient-gender" value="female">Female
+                <input class="male-patient" type="radio" name="patient-gender" value="male">Male
+                <input class="female-patient" type="radio" name="patient-gender" value="female">Female
+
                 <p>Choose a patient character.</p>
-                <div class="ss-selection-wrapper">
+                <div class="ss-selection-wrapper female-patients" style="display: none">
                   <div class="ss-selection">
                     <input type="radio" name="patient" value="patient-light">
-                    <img class="female" src="images/patient-light.png" alt="Light-skinned patient" />
+                    <img class="female" src="images/female-patient-light.png" alt="Light-skinned patient" />
                   </div>
                   <div class="ss-selection">
                     <input type="radio" name="patient" value="patient-med">
-                    <img class="female" src="images/patient-med.png" alt="Medium-skinned patient" />
+                    <img class="female" src="images/female-patient-med.png" alt="Medium-skinned patient" />
                   </div>
                   <div class="ss-selection">
                     <input type="radio" name="patient" value="patient-dk">
-                    <img class="female" src="images/patient-dk.png" alt="Dark-skinned patient" />
+                    <img class="female" src="images/female-patient-dark.png" alt="Dark-skinned patient" />
+                  </div>
+                </div>
+
+                <div class="ss-selection-wrapper male-patients" style="display: none">
+                  <div class="ss-selection">
+                    <input type="radio" name="patient" value="patient-light">
+                    <img src="images/male-patient-light.png" alt="Light-skinned patient" />
+                  </div>
+                  <div class="ss-selection">
+                    <input type="radio" name="patient" value="patient-med">
+                    <img src="images/male-patient-med.png" alt="Medium-skinned patient" />
+                  </div>
+                  <div class="ss-selection">
+                    <input type="radio" name="patient" value="patient-dk">
+                    <img src="images/male-patient-dark.png" alt="Dark-skinned patient" />
                   </div>
                 </div>
               </section>
