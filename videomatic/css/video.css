@@ -196,8 +196,16 @@ header {
 }
 
 header img {
-  width: 30%;
+  width: 70%;
   margin: 0 auto 36px auto;
+}
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  header img {
+    width: 40%;
+  }
 }
 
 header h3, p {
