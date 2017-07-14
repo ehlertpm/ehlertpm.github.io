@@ -45,7 +45,7 @@
 
 .ss-selection {
   display: block;
-  width: 80%;
+  width: 60%;
   margin: 3% auto 3% auto;
   text-align: center;
 }
@@ -355,6 +355,7 @@ p {
 }
 
 
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -437,6 +438,7 @@ i {
   .button {
     width: 50%;
   }
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -455,7 +457,7 @@ input[type='email'], input[type='search'], input[type='text'], input[type='tel']
 /* Removes awkward default styles on some inputs for iOS */
 
 input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'] {
-  width: 50%;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -463,6 +465,14 @@ input[type='email'], input[type='number'], input[type='search'], input[type='tex
 input[type='email']:focus, input[type='number']:focus, input[type='search']:focus, input[type='text']:focus, input[type='tel']:focus, input[type='url']:focus, input[type='password']:focus, textarea:focus, select:focus {
   border: 1px solid #002855;
   outline: 0;
+}
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'] {
+    width: 90%;
+  }
 }
 
 textarea {
@@ -490,7 +500,7 @@ input[type='checkbox'], input[type='radio'] {
 }
 
 
-/* spacing for yes/no radio buttons */
+/* spacing for radio buttons */
 
 input[value='yes'], input[value='male'] {
   margin-right: 3%;
@@ -507,9 +517,14 @@ label>.label-body {
 }
 
 input[type='number'] {
-  width: 10%;
+  width: 30%;
 }
 
+@media (min-width: 550px) {
+  input[type='number'] {
+    width: 10%;
+  }
+}
 
 /* placeholder text */
 
