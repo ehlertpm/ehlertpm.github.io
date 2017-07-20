@@ -59,13 +59,21 @@
   }
 }
 
-
-/* For devices larger than 550px */
+/* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
+}
+
+/* Larger than tablet */
+
+@media (min-width: 800px) {
+  .container {
+    width: 80%
+  }
+}
 
   .ss-selection {
     display: inline-block;
@@ -160,7 +168,6 @@
   .offset-by-one-half.column, .offset-by-one-half.columns {
     margin-left: 52%;
   }
-}
 
 
 /* Base Styles
