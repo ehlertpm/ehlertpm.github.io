@@ -230,7 +230,7 @@ header h3, p {
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
 .image-upload-desktop {
   display: block;
   width: 50%;
