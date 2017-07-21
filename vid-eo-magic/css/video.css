@@ -225,10 +225,10 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
           text-align: center;
           padding: 4%;
         }
-      }
 
-      .browse {
-        display: none;
+        .browse {
+          display: none;
+        }
       }
 
       .study-logo, .study-drug {
@@ -241,7 +241,6 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
         position: relative;
         top: 45%;
       }
-
       /* supastars on form page */
 
       .ss-selection-wrapper {
@@ -273,21 +272,18 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
         width: 100%;
         display: block;
       }
-
       /* supastars on script preview */
 
-      .ss-selection-wrapper-script {
-
-        }
+      .ss-selection-wrapper-script {}
 
       .ss-selection-script {
         text-align: center;
       }
 
       @media (min-width: 800px) {
-.ss-selection-wrapper-script {
-  display: inline-block;
-}
+        .ss-selection-wrapper-script {
+          display: inline-block;
+        }
         .ss-selection-script {
           display: inline-block;
           width: 40%;
