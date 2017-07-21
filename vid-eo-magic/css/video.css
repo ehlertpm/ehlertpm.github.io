@@ -56,7 +56,7 @@
 
       @media (min-width: 800px) {
         .container {
-          width: 80%
+          width: 80%;
         }
       }
       /*.two.columns {
@@ -180,13 +180,13 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
       main {
         padding: 0 5% 5% 5%;
-        background-color: #F0F2F4;
+        background-color: #f0f2f4;
       }
 
       header {
         padding: 5%;
-        background-color: #eaedf0;
         text-align: center;
+        background-color: #eaedf0;
       }
 
       header img {
@@ -220,12 +220,11 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
           width: 50%;
           height: 300px;
           margin: 0 auto 4% auto;
-          background-color: #eee;
-          border: 1px solid #D1D8E0;
-          text-align: center;
           padding: 4%;
+          text-align: center;
+          border: 1px solid #d1d8e0;
+          background-color: #eee;
         }
-
         .browse {
           display: none;
         }
@@ -237,9 +236,9 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       }
 
       .drag {
-        text-align: center;
         position: relative;
         top: 45%;
+        text-align: center;
       }
       /* supastars on form page */
 
@@ -248,9 +247,9 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       }
 
       .ss-selection {
+        display: block;
         width: 80%;
         margin: 3% auto 3% auto;
-        display: block;
         text-align: center;
       }
 
@@ -264,17 +263,15 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
       .female {
         width: 87%;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
       }
 
       img {
-        width: 100%;
         display: block;
+        width: 100%;
       }
       /* supastars on script preview */
-
-      .ss-selection-wrapper-script {}
 
       .ss-selection-script {
         text-align: center;
@@ -317,28 +314,28 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       h1 {
         font-size: 1.9rem;
         line-height: 1.2;
-        text-transform: uppercase;
         letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       h2 {
         font-size: 2.3rem;
         font-weight: 700;
         line-height: 1.25;
-        border-bottom: 1px solid #333;
         text-transform: uppercase;
+        border-bottom: 1px solid #333;
       }
 
       h3 {
         font-size: 2.3rem;
-        line-height: 1.3;
         font-style: italic;
+        line-height: 1.3;
       }
 
       h4 {
         font-size: 1.5rem;
-        line-height: 1.35;
         font-weight: 700;
+        line-height: 1.35;
         text-align: left;
       }
 
@@ -389,7 +386,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       }
 
       a:active, a:hover {
-        color: #0055B7;
+        color: #0055b7;
       }
 
       .add {
@@ -412,6 +409,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
         line-height: 38px;
         display: inline-block;
         box-sizing: border-box;
+        width: 100%;
         height: 38px;
         padding: 0 30px;
         cursor: pointer;
@@ -423,19 +421,18 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
         color: #002855;
         border: 1px solid #002855;
         background-color: transparent;
-        width: 100%;
       }
 
       .button-red {
-        background-color: #F66662;
-        color: white;
-        border: 1px solid #F66662;
         margin-bottom: 4%;
+        color: white;
+        border: 1px solid #f66662;
+        background-color: #f66662;
       }
 
       .button:hover, button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .button:focus, button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus {
-        color: #0055B7;
-        border-color: #0055B7;
+        color: #0055b7;
+        border-color: #0055b7;
         outline: 0;
       }
 
@@ -469,7 +466,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
         width: 50%;
         height: 100%;
         padding: 1%;
-        border: 1px solid #D1D8E0;
+        border: 1px solid #d1d8e0;
         background-color: #fff;
         box-shadow: none;
       }
@@ -494,15 +491,15 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       }
 
       textarea {
-        width: 100%;
-        padding: 2%;
-        border: 1px solid #D1D8E0;
-        background-color: #fff;
-        margin-top: 1%;
         display: block;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        width: 100%;
+        margin-top: 1%;
+        padding: 2%;
+        border: 1px solid #d1d8e0;
+        background-color: #fff;
       }
 
       label, legend {
@@ -546,24 +543,24 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
       }
       /* placeholder text */
 
-       ::-webkit-input-placeholder {
+      ::-webkit-input-placeholder {
         font-style: italic;
         color: #c9c9c9;
       }
 
-       :-moz-placeholder {
+      :-moz-placeholder {
         font-style: italic;
         /* Firefox 18- */
         color: #c9c9c9;
       }
 
-       ::-moz-placeholder {
+      ::-moz-placeholder {
         font-style: italic;
         /* Firefox 19+ */
         color: #c9c9c9;
       }
 
-       :-ms-input-placeholder {
+      :-ms-input-placeholder {
         font-style: italic;
         color: #c9c9c9;
       }
