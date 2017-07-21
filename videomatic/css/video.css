@@ -67,6 +67,7 @@
   }
 }
 
+
 /* Larger than tablet */
 
 @media (min-width: 800px) {
@@ -223,9 +224,17 @@ header h3, p {
   padding: 5% 5% 0 5%;
 }
 
-.image-upload {
-  width: 80%;
-  height: 200px;
+.image-upload-desktop {
+  display: none;
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+.image-upload-desktop {
+  display: block;
+  width: 50%;
+  height: 300px;
   margin: 0 auto 4% auto;
   background-color: #eee;
   border: 1px solid #D1D8E0;
@@ -233,12 +242,8 @@ header h3, p {
   padding: 4%;
 }
 
-/* Larger than tablet */
-
-@media (min-width: 750px) {
-.image-upload {
-  width: 50%;
-  height: 300px;
+.browse {
+  display: none;
 }
 }
 
