@@ -21,7 +21,3 @@
       $('.male-patients').show();
       $('.female-patients').hide();
     });
-
-    $('.add').on('click', function() {
-      $('.countries').show();
-    });

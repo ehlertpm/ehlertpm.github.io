@@ -486,7 +486,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
       @media (min-width: 550px) {
         input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'] {
-          width: 90%;
+          width: 50%;
         }
       }
 
